@@ -37,5 +37,12 @@ function getApi() {
 
   $.get('https://api.github.com/users/' + username, function (result) {
     console.log(result);
+    renderHtml(result);
   });
+}
+
+function renderHtml(result) {
+  $('#info').html(
+    '<p> Name: ' + result?.name + '</p>' + '<p> Bio: ' + result?.bio + '</p>'
+  );
 }
