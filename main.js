@@ -1,8 +1,10 @@
 $(function () {
   $('#effect').addClass('hide');
   $('#tabs').tabs();
+});
 
-  $('#button').on('click', function () {
+$(function () {
+  function runEffect() {
     var selectedEffect = $('#effectTypes').val();
 
     var options = {};
@@ -13,17 +15,27 @@ $(function () {
     }
 
     $('#effect').toggle(selectedEffect, options, 500);
+  }
 
-    $('#search-btn').on('click', function () {
-      var username = $('#github').val();
+  $('#button').on('click', function () {
+    runEffect();
+  });
+});
 
-      $('#form').submit(function (event) {
-        event.preventDefault();
-      });
+$(function () {
+  function getApi() {
+    var username = $('#github').val();
 
-      $.get('https://api.github.com/users/' + username, function (result) {
-        console.log(result);
-      });
+    $('#form').submit(function (event) {
+      event.preventDefault();
     });
+
+    $.get('https://api.github.com/users/' + username, function (result) {
+      console.log(result);
+    });
+  }
+
+  $('#search-btn').on('click', function () {
+    getApi();
   });
 });
