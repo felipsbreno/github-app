@@ -12,6 +12,7 @@
     <link
       rel="stylesheet"
       href="./jquery-ui-themes/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="jquery/jquery-3.6.1.min.js"></script>
     <script src="jquery/jquery-ui.js"></script>
@@ -68,60 +69,66 @@
     </nav>
 
     <div class="container">
-      <div id="tabs">
+      <div id="tabs" class="mt-5">
         <ul>
-          <li><a href="#tabs-1">Nunc tincidunt</a></li>
-          <li><a href="#tabs-2">Proin dolor</a></li>
-          <li><a href="#tabs-3">Aenean lacinia</a></li>
+          <li><a href="#tabs-1">Motivação</a></li>
+          <li><a href="#tabs-2">Projeto</a></li>
         </ul>
         <div id="tabs-1">
           <p>
-            Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus.
-            Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam
-            elementum quam ullamcorper ante. Etiam aliquet massa et lorem.
-            Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
-            Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.
-            Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam
-            molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
-            dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique
-            tempus lectus.
+            Na faculdade tive uma materia sobre Webdesing, onde conheci o Jquery
+            e o Bootstrap, faz tempo que aprendi sobre essas duas libs, porém
+            tem um tempo que não uso e falando a verdade desenvolvi bem pouco
+            com eles, mas no começo então resolvi fazer esse mini projeto usando
+            o Jquery e o Bootstrap.
           </p>
+
+          <strong>Resources:</strong>
+
+          <ul>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+          </ul>
         </div>
         <div id="tabs-2">
           <p>
-            Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida
-            ante, ut pharetra massa metus id nunc. Duis scelerisque molestie
-            turpis. Sed fringilla, massa eget luctus malesuada, metus eros
-            molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet
-            fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
-            Praesent in eros vestibulum mi adipiscing adipiscing. Morbi
-            facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut
-            posuere viverra nulla. Aliquam erat volutpat. Pellentesque
-            convallis. Maecenas feugiat, tellus pellentesque pretium posuere,
-            felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris
-            consectetur tortor et purus.
+            Neste projeto vou usar a api do Github e trazer algumas informações,
+            basta apenas informar o seu username do github e pronto, a api faz o
+            resto haha!. Bora ver esse projeto, então clica no botão abaixo para
+            ver.
           </p>
+          <select name="effects" id="effectTypes">
+            <option value="blind">Blind</option>
+            <option value="bounce">Bounce</option>
+            <option value="clip">Clip</option>
+            <option value="drop">Drop</option>
+            <option value="explode">Explode</option>
+            <option value="fade">Fade</option>
+            <option value="fold">Fold</option>
+            <option value="highlight">Highlight</option>
+            <option value="puff">Puff</option>
+            <option value="pulsate">Pulsate</option>
+            <option value="scale">Scale</option>
+            <option value="shake">Shake</option>
+            <option value="size">Size</option>
+            <option value="slide">Slide</option>
+          </select>
+
+          <button id="button" class="ui-state-active ui-corner-all">
+            Ver Projeto
+          </button>
         </div>
-        <div id="tabs-3">
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-corner-all">
+          <h3 class="ui-widget-header ui-corner-all">Toggle</h3>
           <p>
-            Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti.
-            Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat,
-            eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent
-            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Fusce sodales. Quisque eu urna vel enim commodo
-            pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
-            Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
-          </p>
-          <p>
-            Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper
-            at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo
-            vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.
-            Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros,
-            id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero
-            sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat
-            porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu
-            tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit.
-            Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+            Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed
+            pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae,
+            mi.
           </p>
         </div>
       </div>
