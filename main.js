@@ -4,7 +4,7 @@ $(function () {
 });
 
 $(function () {
-  function runEffect() {
+  $('#button').on('click', function () {
     var selectedEffect = $('#effectTypes').val();
 
     var options = {};
@@ -15,9 +15,19 @@ $(function () {
     }
 
     $('#effect').toggle(selectedEffect, options, 500);
-  }
+  });
+});
 
-  $('#button').on('click', function () {
-    runEffect();
+$(function () {
+  $('#search-btn').on('click', function () {
+    var username = $('#github').val();
+
+    $('#form').submit(function (event) {
+      event.preventDefault();
+    });
+
+    $.get('https://api.github.com/users/' + username, function (result) {
+      console.log(result);
+    });
   });
 });

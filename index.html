@@ -116,10 +116,13 @@
     <div class="container mt-5">
       <div class="toggler">
         <div id="effect" class="ui-widget-content ui-corner-all">
-          <h3 class="ui-widget-header ui-corner-all bg-dark text-white p-2">
+          <h3
+            class="d-flex align-content-center justify-content-center ui-widget-header ui-corner-all bg-dark text-white p-2">
             Github Explorer
           </h3>
-          <form class="row g-3">
+          <form
+            id="form"
+            class="row g-3 d-flex align-items-center justify-content-center">
             <div class="col-auto">
               <div class="p-4 w-100 d-flex">
                 <img
@@ -127,10 +130,16 @@
                   src="./assets/GitHub-Mark/PNG/GitHub-Mark-32px.png"
                   alt="Imagem Github" />
                 <input
+                  id="github"
                   type="text"
-                  class="form-control m-space"
+                  class="form-control"
                   placeholder="Username do github" />
-                <button class="btn btn-primary m-space">Pesquisar</button>
+                <button
+                  type="submit"
+                  id="search-btn"
+                  class="btn btn-primary m-space">
+                  Pesquisar
+                </button>
               </div>
             </div>
           </form>
