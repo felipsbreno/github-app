@@ -41,7 +41,7 @@
           aria-controls="menuMobile"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon text-bg-light"></span>
         </button>
         <div class="collapse navbar-collapse" id="menuMobile">
           <ul class="navbar-nav">
@@ -63,60 +63,52 @@
                 Bootstrap</a
               >
             </li>
+            <li class="nav-item">
+              <a id="button" class="nav-link text-white text-decoration-none">
+                Manifesto
+                <select name="effects" class="hide-select" id="effectTypes">
+                  <option value="slide">Slide</option>
+                </select>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <div id="tabs" class="mt-5">
-        <ul>
-          <li><a href="#tabs-1">Motivação</a></li>
-          <li><a href="#tabs-2">Projeto</a></li>
-        </ul>
-        <div id="tabs-1">
-          <p>
-            Na faculdade tive uma materia sobre Webdesing, onde conheci o Jquery
-            e o Bootstrap, faz tempo que aprendi sobre essas duas libs, porém
-            tem um tempo que não uso e falando a verdade desenvolvi bem pouco
-            com eles, mas no começo então resolvi fazer esse mini projeto usando
-            o Jquery e o Bootstrap.
-          </p>
+    <div class="container mt-5">
+      <div class="toggler">
+        <div id="effect">
+          <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Motivação</a></li>
+              <li><a href="#tabs-2">Projeto</a></li>
+            </ul>
+            <div id="tabs-1">
+              <p>
+                Na faculdade tive uma materia sobre Webdesing, onde conheci o
+                Jquery e o Bootstrap, faz tempo que aprendi sobre essas duas
+                libs, porém tem um tempo que não uso e falando a verdade
+                desenvolvi bem pouco com eles, mas no começo então resolvi fazer
+                esse mini projeto usando o Jquery e o Bootstrap.
+              </p>
 
-          <strong>Resources:</strong>
+              <strong>Resources:</strong>
 
-          <ul>
-            <li>Jquery</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
-        <div id="tabs-2">
-          <p>
-            Neste projeto vou usar a api do Github e trazer algumas informações,
-            basta apenas informar o seu username do github e pronto, a api faz o
-            resto haha!. Bora ver esse projeto, então clica no botão abaixo para
-            ver.
-          </p>
-          <select name="effects" id="effectTypes">
-            <option value="blind">Blind</option>
-            <option value="bounce">Bounce</option>
-            <option value="clip">Clip</option>
-            <option value="drop">Drop</option>
-            <option value="explode">Explode</option>
-            <option value="fade">Fade</option>
-            <option value="fold">Fold</option>
-            <option value="highlight">Highlight</option>
-            <option value="puff">Puff</option>
-            <option value="pulsate">Pulsate</option>
-            <option value="scale">Scale</option>
-            <option value="shake">Shake</option>
-            <option value="size">Size</option>
-            <option value="slide">Slide</option>
-          </select>
-
-          <button id="button" class="ui-state-active ui-corner-all">
-            Ver Projeto
-          </button>
+              <ul>
+                <li>Jquery</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div id="tabs-2">
+              <p>
+                Neste projeto vou usar a api do Github e trazer algumas
+                informações, basta apenas informar o seu username do github e
+                pronto, a api faz o resto haha!. Bora ver esse projeto, então
+                clica no botão abaixo para ver.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -124,12 +116,24 @@
     <div class="container mt-5">
       <div class="toggler">
         <div id="effect" class="ui-widget-content ui-corner-all">
-          <h3 class="ui-widget-header ui-corner-all">Toggle</h3>
-          <p>
-            Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed
-            pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae,
-            mi.
-          </p>
+          <h3 class="ui-widget-header ui-corner-all bg-dark text-white p-2">
+            Github Explorer
+          </h3>
+          <form class="row g-3">
+            <div class="col-auto">
+              <div class="p-4 w-100 d-flex">
+                <img
+                  class="img-thumbnail"
+                  src="./assets/GitHub-Mark/PNG/GitHub-Mark-32px.png"
+                  alt="Imagem Github" />
+                <input
+                  type="text"
+                  class="form-control m-space"
+                  placeholder="Username do github" />
+                <button class="btn btn-primary m-space">Pesquisar</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

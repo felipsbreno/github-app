@@ -7,3 +7,11 @@
  .hide {
   display: none;
  }
+
+ .hide-select {
+  display: none;
+ }
+
+ .m-space {
+  margin-left: 0.5rem;
+ }
