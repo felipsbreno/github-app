@@ -36,7 +36,6 @@ function getApi() {
   });
 
   $.get('https://api.github.com/users/' + username, function (result) {
-    console.log(result);
     renderHtml(result);
   });
 }
